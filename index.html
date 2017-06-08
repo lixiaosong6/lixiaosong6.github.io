@@ -155,114 +155,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-我的博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/07/我的博客/">我的博客</a>
-    </h1>
-  
-
-        
-        <a href="/2017/06/07/我的博客/" class="archive-article-date">
-  	<time datetime="2017-06-07T07:52:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="http://or6ahc8gl.bkt.clouddn.com/20150116_9f513b3c2cc00fd066b4bbe339ff9fe0.png" alt="天是黑色的"></p>
-<p>嘀嘀嘀，快点打卡，老司机要开车咯~</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/07/我的博客/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-springmvc使用redis连接池" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/07/springmvc使用redis连接池/">spring mvc使用redis连接池</a>
-    </h1>
-  
-
-        
-        <a href="/2017/06/07/springmvc使用redis连接池/" class="archive-article-date">
-  	<time datetime="2017-06-07T07:52:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>pom文件引入<br>    <dependency><br>                <groupid>org.springframework.data</groupid><br>                <artifactid>spring-data-redis</artifactid><br>                <version>1.4.2.RELEASE</version><br>    </dependency></p>
-<p>spring配置文件添加<br>    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"><br>        <property name="hostName" value="172.21.70.11"><br>        <property name="port" value="6379"><br>    </property></property></bean></p>
-<pre><code>&lt;bean id=&quot;redisTemplate&quot; class=&quot;org.springframework.data.redis.core.RedisTemplate&quot;&gt;
-    &lt;property name=&quot;connectionFactory&quot; ref=&quot;jedisConnectionFactory&quot; /&gt;
-&lt;/bean&gt;
-&lt;bean id=&quot;stringRedisTemplate&quot; class=&quot;org.springframework.data.redis.core.StringRedisTemplate&quot;&gt;
-    &lt;property name=&quot;connectionFactory&quot; ref=&quot;jedisConnectionFactory&quot;&gt;&lt;/property&gt;
-&lt;/bean&gt;
-</code></pre><p>具体简单调用<br>    @Autowired<br>    private RedisTemplate<string, string=""> redisTemplate;<br>    @Autowired<br>    StringRedisTemplate stringRedisTemplate;</string,></p>
-<pre><code>redisTemplate.opsForValue().set(&quot;2&quot;, &quot;666666666666&quot;);
-stringRedisTemplate.opsForValue().set(&quot;2&quot;, &quot;666666666666&quot;);
-System.out.println(redisTemplate.opsForValue().get(&quot;2&quot;));
-</code></pre>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/07/springmvc使用redis连接池/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
     <article id="post-距离高考还有26天的叨念" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -303,6 +195,55 @@ System.out.println(redisTemplate.opsForValue().get(&quot;2&quot;));
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/06/07/距离高考还有26天的叨念/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
+    <article id="post-我的博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/07/我的博客/">我的博客</a>
+    </h1>
+  
+
+        
+        <a href="/2017/06/07/我的博客/" class="archive-article-date">
+  	<time datetime="2017-06-07T07:52:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://or6ahc8gl.bkt.clouddn.com/20150116_9f513b3c2cc00fd066b4bbe339ff9fe0.png" alt="天是黑色的"></p>
+<p>嘀嘀嘀，快点打卡，老司机要开车咯~</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/06/07/我的博客/">展开全文 >></a>
         </p>
       
 
